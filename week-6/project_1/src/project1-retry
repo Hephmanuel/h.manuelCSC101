@@ -1,0 +1,14 @@
+fn main(){
+
+	println!("1 - Find area of trapezium \n2 -  Find area of rhombus
+		\n3 - Find area of parallelogram \n4 - Find volume of a cube
+		\n5 - Find volume of a cylinder");
+	println!("Select a number: {}", ch);
+	
+	let input = String::new;
+    io::stdin().read_line(&mut input).expect("Failed to read input");
+    let ch:i32 = input.trim().parse().expect("Failed to read input");
+
+if ch == 1{
+	println!({},a_trapezium());
+}
