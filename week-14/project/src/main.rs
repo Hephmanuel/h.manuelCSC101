@@ -38,29 +38,31 @@ file.read_to_string(&mut contents).expect("Failed to read globacom_dbase.sql");
 print!("{}",contents);
 
 }
+//manager function
 fn project_manager(){
-	let mut file = File::open("project_tb.sql").expect("Failed to read input");
+	let mut file = File::open("project_tb.sql").unwrap();
 	let mut contents = String::new();
-	file.read_to_string(&mut contents).expect("Failed to read input");
+	file.read_to_string(&mut contents).unwrap();
 	print!("{}",contents);
 }
+//employess function
 fn employee(){
-	let mut file = File::open("staff_tb.sql").expect("Failed to read input");
+	let mut file = File::open("staff_tb.sql").unwrap();
 	let mut contents = String::new();
-	file.read_to_string(&mut contents).expect("Failed to read input");
+	file.read_to_string(&mut contents).unwrap();
 	print!("{}",contents);
 }
-
+//customer function
 fn customer(){
-	let mut file = File::open("customers_tb.sql").expect("Failed to read input");
+	let mut file = File::open("customers_tb.sql").unwrap();
 	let mut contents = String::new();
-	file.read_to_string(&mut contents).expect("Failed to read input");
+	file.read_to_string(&mut contents).unwrap();
 	print!("{}",contents);
 }
-
+//vendor function
 fn vendor(){
-	let mut file = File::open("dataplans_tb.sql").expect("Failed to read input");
+	let mut file = File::open("dataplans_tb.sql").unwrap();
 	let mut contents = String::new();
-	file.read_to_string(&mut contents).expect("Failed to read input");
+	file.read_to_string(&mut contents).unwrap();
 	print!("{}",contents);
 }
